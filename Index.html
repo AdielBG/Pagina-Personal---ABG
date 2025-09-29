@@ -1,84 +1,217 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Styles.css">
-    <title>Plantilla</title>
+    <title>Adiel Batista Guzmán - Portafolio</title>
 </head>
 <body>
-    
-        <header class="cabecera">
-
-            <img src="multimedia/364e7e62-2076-49c6-8f7b-2c66464bea65.jpg" alt="Logo">
-            <h1>Adiel Batista Guzmán</h1>
-
+    <!-- HEADER CON NAVEGACIÓN -->
+    <header class="header">
+        <div class="header-contenido">
+            <img src="multimedia/364e7e62-2076-49c6-8f7b-2c66464bea65.jpg" alt="Adiel Batista" class="header-logo">
+            <h1 class="header-nombre">Adiel Batista Guzmán</h1>
             <nav class="navegacion">
-                <a href="#Index">Inicio</a>
-                <a href="#Sobremi">Sobre mi</a>
-                <a href="#Proyectos">Proyectos</a>
-                <a href="#Habilidades">Habilidades</a>
-                <a href="#Contacto">Contacto</a>
-                <a href="#Footer">Footer</a>
+                <a href="#inicio">Inicio</a>
+                <a href="#sobre-mi">Sobre mí</a>
+                <a href="#habilidades">Habilidades</a>
+                <a href="#proyectos">Proyectos</a>
+                <a href="#contacto">Contacto</a>
             </nav>
-
-        </header>
-
-        <br><br><br>
-
-        <a href="#Sobremi" name="sobreMi"></a>
-        <div class="sobreMi">
-
-            <h3>Sobre mi</h3>
-            <p>Dedicado a la informática con conocimientos de programación, Administración de Bases de Datos, Marketing Digital, <br>
-            Manejo de programas de oficina e Internet, digitación , edición de contenidos multimedia y  mecanografía</p>
-
+            <!-- Botón hamburguesa para móvil (lo activaremos con JS después) -->
+            <button class="menu-toggle" aria-label="Abrir menú">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
         </div>
+    </header>
 
-        <br><br><br>
-
-        <a href="#proyectos" name="Proyectos"></a>
-        <div class="Proyectos">
-            <h3>Proyectos</h3>
-            <p>Aquí algunos de mis proyectos destacados:</p>
-            <ul>
-                <li> <strong> Sistema de Gestión de Inventarios. </strong> Desarrollo de un sistema de gestión de inventarios para una pequeña empresa utilizando PHP y SQL.</li>
-                <li> <strong> Portafolio Web Personal. </strong> Creación de una página web personal para mostrar mi portafolio y habilidades utilizando HTML, CSS y JavaScript. </li>
-                <li> <strong> Campaña de Marketing Digital. </strong> Implementación de una campaña de marketing digital en redes sociales para aumentar la visibilidad de un negocio local.</li>
-            </ul>
+    <!-- HERO SECTION - SECCIÓN PRINCIPAL -->
+    <section id="inicio" class="hero">
+        <div class="hero-contenido">
+            <p class="hero-saludo">¡Hola! 👋 Soy</p>
+            <h2 class="hero-titulo">Adiel Batista Guzmán</h2>
+            <p class="hero-subtitulo">Estudiante de Ingeniería de Software | Desarrollador Web</p>
+            <p class="hero-descripcion">
+                Apasionado por crear experiencias web increíbles y soluciones digitales innovadoras
+            </p>
+            <div class="hero-botones">
+                <a href="#proyectos" class="btn btn-primary">Ver Proyectos</a>
+                <a href="#contacto" class="btn btn-secondary">Contáctame</a>
+            </div>
         </div>
+    </section>
 
-        <br><br><br>
-
-
-        <a href="#Habilidades" name="Habilidades"></a>
-        <div class="Habilidades">
-            <h3>Habilidades</h3>
-            <ul>
-                <li>Programación en HTML, CSS, PHP, JavaScript y SQL</li>
-                <li>Administración de Bases de Datos (MySQL, SQL Server)</li>
-                <li>Marketing Digital y Gestión de Redes Sociales</li>
-                <li>Edición de Contenidos Multimedia (Canva, CapCut, Inshot)</li>
-                <li>CMS con WordPress</li>
-                <li>Mecanografía y Digitación Rápida</li>
-            </ul>
+    <!-- SOBRE MÍ -->
+    <section id="sobre-mi" class="sobre-mi">
+        <div class="contenedor">
+            <h3 class="seccion-titulo">Sobre mí</h3>
+            <div class="sobre-mi-grid">
+                <div class="sobre-mi-texto">
+                    <p>
+                        Soy estudiante de 9no cuatrimestre de Ingeniería de Software, dedicado al desarrollo web 
+                        y la creación de soluciones digitales. Mi enfoque está en el frontend, aunque también 
+                        manejo backend y bases de datos.
+                    </p>
+                    <p>
+                        Me especializo en programación web, administración de bases de datos, marketing digital 
+                        y edición de contenidos multimedia. Siempre estoy aprendiendo nuevas tecnologías y 
+                        mejorando mis habilidades.
+                    </p>
+                </div>
+                <div class="sobre-mi-datos">
+                    <div class="dato-item">
+                        <span class="dato-label">📍 Ubicación:</span>
+                        <span class="dato-valor">República Dominicana</span>
+                    </div>
+                    <div class="dato-item">
+                        <span class="dato-label">🎓 Universidad:</span>
+                        <span class="dato-valor">Estudiante de Ingeniería</span>
+                    </div>
+                    <div class="dato-item">
+                        <span class="dato-label">📚 Cuatrimestre:</span>
+                        <span class="dato-valor">9no de 12</span>
+                    </div>
+                    <div class="dato-item">
+                        <span class="dato-label">💻 Especialización:</span>
+                        <span class="dato-valor">Desarrollo Web</span>
+                    </div>
+                </div>
+            </div>
         </div>
+    </section>
 
-        
-        <br><br><br>
-
-        <a href="#Contacto" name="Contacto"></a>
-        <div class="Contacto">
-            <h3>Contacto</h3>
-            <p>Si deseas ponerte en contacto conmigo, puedes enviarme un correo electrónico a: <a href="mailto:adielbg17@gmail.com">Contactar a Adiel</a></p>
-            <p>O llamarme al número: +1 809 423 6925.</p>
+    <!-- HABILIDADES -->
+    <section id="habilidades" class="habilidades">
+        <div class="contenedor">
+            <h3 class="seccion-titulo">Habilidades</h3>
+            <div class="habilidades-categorias">
+                <!-- Frontend -->
+                <div class="categoria">
+                    <h4 class="categoria-titulo">Frontend</h4>
+                    <div class="skills-tags">
+                        <span class="skill-tag">HTML5</span>
+                        <span class="skill-tag">CSS3</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">WordPress</span>
+                    </div>
+                </div>
+                
+                <!-- Backend -->
+                <div class="categoria">
+                    <h4 class="categoria-titulo">Backend & Bases de Datos</h4>
+                    <div class="skills-tags">
+                        <span class="skill-tag">PHP</span>
+                        <span class="skill-tag">SQL</span>
+                        <span class="skill-tag">MySQL</span>
+                        <span class="skill-tag">SQL Server</span>
+                    </div>
+                </div>
+                
+                <!-- Herramientas -->
+                <div class="categoria">
+                    <h4 class="categoria-titulo">Herramientas & Otros</h4>
+                    <div class="skills-tags">
+                        <span class="skill-tag">Marketing Digital</span>
+                        <span class="skill-tag">Canva</span>
+                        <span class="skill-tag">CapCut</span>
+                        <span class="skill-tag">Inshot</span>
+                    </div>
+                </div>
+            </div>
         </div>
+    </section>
 
-        <br><br><br>
+    <!-- PROYECTOS -->
+    <section id="proyectos" class="proyectos">
+        <div class="contenedor">
+            <h3 class="seccion-titulo">Proyectos</h3>
+            <div class="proyectos-grid">
+                <!-- Proyecto 1 -->
+                <article class="proyecto-card">
+                    <div class="proyecto-header">
+                        <h4 class="proyecto-titulo">Sistema de Gestión de Inventarios</h4>
+                    </div>
+                    <p class="proyecto-descripcion">
+                        Sistema completo para gestión de inventarios de pequeñas empresas, 
+                        con control de stock, reportes y alertas.
+                    </p>
+                    <div class="proyecto-tech">
+                        <span class="tech-tag">PHP</span>
+                        <span class="tech-tag">SQL</span>
+                        <span class="tech-tag">MySQL</span>
+                    </div>
+                </article>
 
-        <a href="#Footer" name="Footer"></a>
-        <footer class="Footer">
-            <p>&copy; 2024 Adiel Batista Guzmán. Todos los derechos reservados.</p>
-        </footer>   
+                <!-- Proyecto 2 -->
+                <article class="proyecto-card">
+                    <div class="proyecto-header">
+                        <h4 class="proyecto-titulo">Portafolio Web Personal</h4>
+                    </div>
+                    <p class="proyecto-descripcion">
+                        Página web personal para mostrar proyectos y habilidades con 
+                        diseño responsive y animaciones interactivas.
+                    </p>
+                    <div class="proyecto-tech">
+                        <span class="tech-tag">HTML</span>
+                        <span class="tech-tag">CSS</span>
+                        <span class="tech-tag">JavaScript</span>
+                    </div>
+                </article>
+
+                <!-- Proyecto 3 -->
+                <article class="proyecto-card">
+                    <div class="proyecto-header">
+                        <h4 class="proyecto-titulo">Campaña de Marketing Digital</h4>
+                    </div>
+                    <p class="proyecto-descripcion">
+                        Estrategia completa de marketing en redes sociales para aumentar 
+                        la visibilidad de negocio local.
+                    </p>
+                    <div class="proyecto-tech">
+                        <span class="tech-tag">Marketing</span>
+                        <span class="tech-tag">Redes Sociales</span>
+                        <span class="tech-tag">Canva</span>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section id="contacto" class="contacto">
+        <div class="contenedor">
+            <h3 class="seccion-titulo">Contacto</h3>
+            <p class="contacto-intro">¿Tienes un proyecto en mente? ¡Hablemos!</p>
+            <div class="contacto-metodos">
+                <a href="mailto:adielbg17@gmail.com" class="contacto-item">
+                    <span class="contacto-icono">📧</span>
+                    <span class="contacto-label">Email</span>
+                    <span class="contacto-valor">adielbg17@gmail.com</span>
+                </a>
+                <a href="tel:+18094236925" class="contacto-item">
+                    <span class="contacto-icono">📱</span>
+                    <span class="contacto-label">Teléfono</span>
+                    <span class="contacto-valor">+1 809 423 6925</span>
+                </a>
+            </div>
+            <!-- Aquí puedes agregar enlaces a redes sociales -->
+            <div class="redes-sociales">
+                <a href="#" class="red-social" aria-label="LinkedIn">💼 LinkedIn</a>
+                <a href="#" class="red-social" aria-label="GitHub">🐙 GitHub</a>
+                <a href="#" class="red-social" aria-label="Twitter">🐦 Twitter</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <p>&copy; 2024 Adiel Batista Guzmán. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="Scritp.js"></script>
 </body>
 </html>
